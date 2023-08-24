@@ -1004,17 +1004,13 @@ svg {
 
 .about-company-and-support-info {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid: min-content / repeat(4, max-content);
+  align-content: center;
   gap: 11em;
   height: 21em;
   padding-left: 10em;
   padding-right: 15em;
-  justify-items: end;
-  align-items: center;
   border-bottom: 1px #ffffff solid;
-}
-
-.company-info {
 }
 
 .company-info h5 {
@@ -1036,6 +1032,59 @@ svg {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  line-height: 16px; /* 100% */
+  padding-bottom: 1.5em;
+  margin: 0;
+}
+
+.support-info h5,
+.support-info h6 {
+  color: #fff;
+  font-feature-settings: "salt" on, "liga" off;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px; /* 100% */
+  margin: 0;
+  padding-bottom: 1.5em;
+}
+
+.support-info h5 {
+  font-weight: 600;
+}
+
+.support-info h6 {
+  font-weight: 400;
+}
+
+.legal-info h5,
+.legal-info h6 {
+  color: #fff;
+  font-feature-settings: "salt" on, "liga" off;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px; /* 100% */
+  margin: 0;
+  padding-bottom: 1.5em;
+}
+
+.legal-info h5 {
+  font-weight: 600;
+}
+
+.legal-info h6 {
+  font-weight: 400;
+}
+
+.install-app-info h5,
+.install-app-info img {
+  color: var(--text-gray-100, #f4f5f7);
+  font-feature-settings: "salt" on, "liga" off;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
   line-height: 16px; /* 100% */
   padding-bottom: 1.5em;
   margin: 0;
