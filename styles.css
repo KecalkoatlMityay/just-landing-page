@@ -1007,10 +1007,12 @@ svg {
   grid: min-content / repeat(4, max-content);
   align-content: center;
   gap: 11em;
+  margin: 0;
   height: 21em;
-  padding-left: 10em;
+  padding-left: 11em;
   padding-right: 15em;
   border-bottom: 1px #ffffff solid;
+  justify-content: center;
 }
 
 .company-info h5 {
