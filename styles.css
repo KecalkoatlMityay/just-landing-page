@@ -60,12 +60,73 @@ body {
 }
 
 .nav-item {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 100% */
+}
+
+.nav-item-1,
+.nav-item-2,
+.nav-item-3 {
   color: #35414b;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px; /* 100% */
+  position: relative;
+}
+
+.nav-items img {
+  transform: rotate(270deg);
+}
+
+.nav-item-1:hover,
+.nav-item-2:hover,
+.nav-item-3:hover {
+  background-color: #f5f5f5;
+}
+
+.nav-item-1:hover img,
+.nav-item-2:hover img,
+.nav-item-3:hover img {
+  transform: rotate(0deg);
+}
+
+.nav-item-1 .nav-item-dropdown,
+.nav-item-2 .nav-item-dropdown,
+.nav-item-3 .nav-item-dropdown {
+  display: none;
+}
+
+.nav-item-dropdown a {
+  color: #35414b;
+  text-decoration: none;
+}
+
+.nav-item-1:hover > .nav-item-dropdown,
+.nav-item-3:hover > .nav-item-dropdown {
+  display: initial;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  width: max-content;
+  row-gap: 0.3em;
+  position: absolute;
+  background-color: #f5f5f5;
+  padding: 0.5em 0;
+}
+
+.nav-item-2:hover > .nav-item-dropdown {
+  display: initial;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  width: 4em;
+  row-gap: 0.3em;
+  position: absolute;
+  background-color: #f5f5f5;
+  padding: 0.5em 0;
 }
 
 .main-content {
